@@ -17,25 +17,26 @@ This is a reusable visualization of nursing homes(and retirement homes) for seni
  `gunzip india.mbtiles.gz`
 
 2.Now run the following commands:
- `sudo apt-get update
 
-sudo apt-get install git-core
+ `sudo apt-get update`
 
-git --version
+ `sudo apt-get install git-core`
 
-git clone https://github.com/mapbox/osm-tag-stats.git
+ `git --version`
 
-cd osm-tag-stats
+ `git clone https://github.com/mapbox/osm-tag-stats.git`
 
-<sudo> npm install
+ `cd osm-tag-stats`
 
-<sudo> npm link`
+ `<sudo> npm install`
+
+ `<sudo> npm link`
 
 3.Write a query to extract data from OSM using OSM tags in a JSON file.
 
-    Name the JSON file as **filter.json**
+   Name the JSON file as __filter.json__
     
-    Save the [filter.json](https://github.com/Jewel-98/HOT-OSM/filter.json) file in the same folder as the india.mbtiles file
+   Save the [filter.json](https://github.com/Jewel-98/HOT-OSM/filter.json) file in the same folder as the india.mbtiles file
     
 4.Now run the following command for data extraction:
 
