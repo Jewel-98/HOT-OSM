@@ -18,12 +18,12 @@ This is a reusable visualization of nursing homes(and retirement homes) for seni
 
 2.Now run the following commands:
 
- `sudo apt-get update
+`sudo apt-get update
 
  sudo apt-get install git-core
-
+ 
  git --version
-
+ 
  git clone https://github.com/mapbox/osm-tag-stats.git
 
  cd osm-tag-stats
@@ -33,8 +33,10 @@ This is a reusable visualization of nursing homes(and retirement homes) for seni
  <sudo> npm link`
 
 3.Write a query to extract data from OSM using OSM tags in a JSON file.
+
     *Name the JSON file as **filter.json**
-    *Save the filter.json file in the same folder as the india.mbtiles file
+    
+    *Save the [filter.json](https://github.com/Jewel-98/HOT-OSM/filter.json) file in the same folder as the india.mbtiles file
     
 4.Now run the following command for data extraction:
 
@@ -46,9 +48,9 @@ This is a reusable visualization of nursing homes(and retirement homes) for seni
  Copy the contents of results.geojson on [https://geojson.io](https://geojson.io.)
 
 5.To visualize map using Mapbox GL:
-  Create an html file (index.html) with data in results.geojson file.
+  Create an html file ([index.html](https://github.com/Jewel-98/HOT-OSM/index.html)) with data in results.geojson file.
   
- **View the visualized map on nursing homes for senior citizens [here](https://jewel-98.github.io/)
+ **View the visualized map on nursing homes for senior citizens [here](https://jewel-98.github.io/)**
 
 
 
