@@ -2,7 +2,7 @@
 
 This is a reusable visualization of nursing homes(and retirement homes) for senior citizens(elder,older,pensioner) in India displayed using Mapbox GL.
 
-##Prerequesites:##
+## Prerequesites:
 
 1.To download India.mbtiles,goto the following link and copy the link to india.mbtlies
 
