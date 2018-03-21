@@ -36,19 +36,19 @@ This is a reusable visualization of nursing homes(and retirement homes) for seni
 
    Name the JSON file as __filter.json__
     
-   Save the [filter.json](https://github.com/Jewel-98/HOT-OSM/filter.json) file in the same folder as the india.mbtiles file
+   Save the [filter.json](https://github.com/Jewel-98/HOT-OSM/blob/master/filter.json) file in the same folder as the india.mbtiles file
     
 4.Now run the following command for data extraction:
 
  `osm-tag-stats --geojson=results.geojson --mbtiles="india.mbtiles" --filter='filter.json' --count`
 
- The result will be stored in results.geojson file.
+ The result will be stored in [results.geojson](https://github.com/Jewel-98/HOT-OSM/blob/master/results.geojson) file.
 
  To view extracted data on map:
  Copy the contents of results.geojson on [https://geojson.io](https://geojson.io.)
 
 5.To visualize map using Mapbox GL:
-  Create an html file ([index.html](https://github.com/Jewel-98/HOT-OSM/index.html)) with data in results.geojson file.
+  Create an html file ([index.html](https://github.com/Jewel-98/HOT-OSM/blob/master/index.html)) with data in results.geojson file.
   
  **View the visualized map on nursing homes for senior citizens [here](https://jewel-98.github.io/)**
 
