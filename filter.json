@@ -1,0 +1,4 @@
+["all",
+       ["==","social_facility:for","senior"],
+       ["==","social_facility","nursing_home"]
+]

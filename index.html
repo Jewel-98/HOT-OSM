@@ -1,0 +1,87 @@
+cc<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Draw GeoJSON points</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic25laGFzYW50aG9zaCIsImEiOiJjamVtbXRnb3EwNzI4MzNtbTZtNDNldGE1In0.WXYWA8ovqMCB7GYoI2kIiQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [76.1, 13.8],
+    zoom: 5
+});
+
+map.on('load', function () {
+
+    map.addLayer({
+     "id": "points",
+     "type": "symbol",
+     "source": {
+      "type": "geojson",
+      "data": { 
+       "type": "FeatureCollection",
+       "features": [
+                     
+                    {"type":"Feature",
+                     "geometry":{"type":"Point",
+                                 "coordinates":[77.60610692203045,12.960050874115055]
+                                },
+                     "properties":{
+                                   "name":"Society of the Little Sisters of the Poor",
+                                   "icon":"monument"
+                                  }
+                    },
+                    {"type":"Feature",
+                     "geometry":{"type":"Point",
+                                 "coordinates":[78.6836504470557,10.817587463525896]
+                                },
+                     "properties":{
+                                   "name":"shanmugam nursing home",
+                                   "icon":"monument"
+                                  }
+                    },
+                    {"type":"Feature",
+                     "geometry":{"type":"Point",
+                                 "coordinates":[83.24201286770403,17.688839915484976]
+                                },
+                     "properties":{
+                                   "name":"Pratima Nursing Home",
+                                   "icon":"monument"
+                                  }
+                    },
+                    {"type":"Feature",
+                     "geometry":{"type":"Point",
+                                 "coordinates":[91.78589246235788,26.131027625751628]
+                                },
+                     "properties":{
+                                   "name":"H M NURSING HOME",
+                                   "icon":"monument"
+                                  }
+                    }]
+                  }
+                 },
+      "layout": {
+      "icon-image": "{icon}-15",
+      "text-field": "{name}",
+      "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+      "text-offset": [0, 0.6],
+      "text-anchor": "top"
+                }
+              });
+            });
+</script>
+
+</body>
+</html>
